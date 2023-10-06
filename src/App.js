@@ -9,7 +9,7 @@ import SingleBlog from './components/blogs/singleBlog/SingleBlog';
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={window.location.pathname || ''}>
 			<div className="">
 				<Routes>
 					<Route path="/" element={<MainLayout />}>
